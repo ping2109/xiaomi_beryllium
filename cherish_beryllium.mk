@@ -18,8 +18,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions.
-DEVICE_MAINTAINER := XtremeOrnob
-PRODUCT_NAME := beryllium
+PRODUCT_NAME := cherish_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
@@ -35,3 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Add CherishOS Maintainer name
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer="ping2109"

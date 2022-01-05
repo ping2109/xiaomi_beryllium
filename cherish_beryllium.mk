@@ -6,6 +6,8 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 

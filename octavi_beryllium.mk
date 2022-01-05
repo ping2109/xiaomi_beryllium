@@ -9,6 +9,13 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+
+# ArrowOS Stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # GApps
 WITH_GMS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
